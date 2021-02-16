@@ -20,7 +20,7 @@ body {
 .topnav a:hover {
   background-color: clear;
   color:whitesmoke;
-  text-shadow: 0 0 20px grey;
+  text-shadow: 0 0 30px grey;
 }
 
 .topnav #timeRemaining {
@@ -34,7 +34,7 @@ body {
 /* <!--box will contain questions--> */
 #wrapper {
   border: 1px solid whitesmoke;
-  box-shadow: 0 0 50px grey;
+  box-shadow: 0 0 100px grey;
   width: 800px;
   height: 400px;
   margin-left: 23.3%;
@@ -47,5 +47,29 @@ h1 {
 }
 p {
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
+}
+/* I took the style of buttons from https://fdossena.com/?p=html5cool/buttons/i.frag */
+button {
+  flex:center;
+}
+
+
+#startQuiz {
+  display:inline-block;
+  padding:15px 30px;
+  margin:10px 10px 10px 0;
+  border-radius:40px;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:#4eb5f1;
+  text-align:center;
+  transition: all 0.1s;
+  margin-left:43%;
+}
+
+#startQuiz:hover {
+  background-color:#4095c6;
 }
