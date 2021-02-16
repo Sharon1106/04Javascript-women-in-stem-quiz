@@ -8,11 +8,37 @@
   <link rel="stylesheet" href = "style.css">
 </head>
 <body>
-  
+  <!-- User opens page with quiz info and start button
+  when user clicks start button a timer starts and user sees question
+  when user answers question another question is presented 
+  If answer is right, user recieves score
+  when user gives wrong answer, time is subtracted
+  game is over when user answers all questions OR timer reaches zero
+  when game over screen is shown user can same initials and score -->
+  <!--high score link-->
+  <div class="topnav">
+    <a class="active" href="#">View Highscores</a>
+    <div id="timeRemaining">Time Remaining</div>
+    <!--this will link to a scores page-->
+  </div>
 
+  <!-- wrapper for box with quiz -->
+  <div id="wrapper"> 
+    <!--Where questions will change-->
+    <div id="questionsAsked">
+      <!--Front Page text-->
+      <h1>Women in STEM quiz!</h1>
+      <p>Let's see how much you know about women in STEM!</p> 
+      <br>
+      <p>You have 60 seconds to answer these questions.</p>
+      <br>
+      <p>But remember, each wrong answer deducts your time by 10 seconds!</p>
+      <!--where choices will go -->
+      <ul id="quizChoices"></ul>
+      <button id="startQuiz">Start Quiz</button>
 
-
-
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
