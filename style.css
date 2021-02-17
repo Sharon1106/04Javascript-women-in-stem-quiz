@@ -2,6 +2,7 @@ body {
   color:whitesmoke;
   background-image: url("https://craftlakecity.com/wp-content/uploads/2020/04/STEM-Background.jpg");
   background-size: auto; 
+  font-family: 'Roboto', sans-serif;
 }
 
 .topnav {
@@ -40,6 +41,8 @@ body {
   height: 400px;
   margin-left: 23.3%;
   margin-top: 10%;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 h1 {

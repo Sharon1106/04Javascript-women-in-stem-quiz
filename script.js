@@ -1,7 +1,7 @@
 /// when user starts quiz by s=clicking start button
 
 
-//thats when timer starts and questions are asked
+//thats when ticodmer starts and questions are asked
 
 
 // when question is answered then another question is asked
