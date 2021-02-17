@@ -1,7 +1,25 @@
-/// when user starts quiz by s=clicking start button
+// set variables for content
+//  variable for button click 
 
 
-//thats when ticodmer starts and questions are asked
+
+
+
+
+
+var score = 0;
+var timeLeft = 60;
+var timeInterval;
+// gets timer element and replaces it with timer function
+var startQuizButton = document.getElementById("startQuiz");
+/// when user starts quiz by clicking start button
+startQuizButton.addEventListener("click", startQuiz);
+console.log(startQuiz);
+
+
+//thats when timer starts and is shown on screen 
+// function startQuiz ();
+
 
 
 // when question is answered then another question is asked
