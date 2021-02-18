@@ -34,7 +34,7 @@ body {
 }
 
 /* <!--box will contain questions--> */
-#wrapper {
+#box {
   border: 1px solid whitesmoke;
   box-shadow: 0 0 100px grey;
   width: 800px;
