@@ -24,16 +24,17 @@ var Questions = [
 // set variables for content
 // global variables
 var score = 0;
+// index for questions
 var questionIndex = 0;
 // an array to store high scores
-var newScore
+var newScore;
 
 //  variables for timer
 //start time
 var timeLeft = 60;
 //time deducted for wrong answer
 var timeDeducted = 10;
-
+// time when quiz is done 
 var timePaused;
 
 // gets id type from button and adds the timer and questions when clicked
@@ -45,13 +46,14 @@ var timeRemaining = document.getElementById("timeRemaining");
 // where questions will be shown
 var questionsAsked = document.getElementById("questionsAsked");
 
-// created variable where elements created under ul will be stored and shown
-seperateQuestions = document.createElement("ul");
-
 /// button is waiting to be clicked to run the startQuiz function
 startQuizButton.addEventListener("click", startQuiz);
 
-// this function starts the timer and displays questions on screen
+// created variable where elements created under ul will be stored and shown
+seperateQuestions = document.createElement("ul");
+
+
+// this function starts the timer and renders questions and choices to the screen
 function startQuiz () {
   //the setInterval() method will continue calling the function until clearInterval() is called
     var timerInterval = setInterval(function() {
@@ -64,39 +66,24 @@ function startQuiz () {
         // then clear the interval and display times over
         clearInterval(timerInterval);
         timeRemaining.textContent = "Time is up!";
-        // render displayQuestions
-        
       }
     }, 1000); 
+    //after displaying timer call on the render function to display questions 
+    render(questionIndex);
 }; 
-  //   if (timePaused === 0) {
-  //     timePaused = setInterval(function() {
-  //       timeLeft--; 
-  //       timeRemaining.textContent = timeLeft; 
 
-  //       if (timeLeft  <= 0) {
-  //         clearInterval(timePaused);
-  //         timeRemaining.textContent = "You're out of time!";
+// render is a funtion that let’s you pass in a template and the element to render it into
+function render(questionIndex) {
+  //we'll use innerHTML, a property that lets you set the inner html of an element
+  
 
-  //       }
-        
-  //     }, 1000 );
-  //   }
-  // }
 
-// thats when timer starts and is shown on screen 
-// function displayQuestions () {
-//   }
-//   //clears interval
-//   clearInterval( );
-//   render (questions)
-// };
-
+// // when question is answered then another question is asked
 // use for loop
 // for(var i = 0; i<quizQuestions.choices.length; i++) {
 //   var choisesElement
 // }
-// // when question is answered then another question is asked
+}
 
 
 
